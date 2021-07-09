@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --colorSedan:hsl(31, 77%, 52%);
+    --colorSuv:hsl(184, 100%, 22%);
+    --colorLuxury:hsl(179, 100%, 13%);
+    --colorLightGray:hsl(0, 0%, 95%);
+    --colorWtrasnparent:hsla(0, 0%, 100%, 0.75);
+    --FontBigShoulder:'Big Shoulders Display', cursive;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    max-width: 1440;
+    font-family: 'Lexend Deca', sans-serif;  
+}
+
+section{
+    background-color: var(--colorLightGray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container{
+    height: 400px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+}
+
+.container{
+    padding: 25px 45px 12px 45px;
+}
+
+.sedan{
+    background-color: var(--colorSedan);
+}
+
+.suvs{
+    background-color: var(--colorSuv);
+}
+
+.luxury{
+    background-color: var(--colorLuxury);
+}
+
+h2{
+    color: var(--colorLightGray);
+    font-family: var(--FontBigShoulder);
+    font-size: 30px;
+}
+
+p{
+    color: var(--colorLightGray);
+    margin-bottom: 70px;   
+}
+
+button{
+    font-weight: 700;
+    width: 75%;
+    padding: 10px 10px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: 200ms ease-in-out;    
+}
+
+.sedan > button{
+    color: var(--colorSedan);
+}
+
+.suvs > button{
+    color: var(--colorSuv);
+}
+
+.luxury > button{
+    color: var(--colorLuxury);
+}
+
+button:hover{
+    color: white;
+    background-color: transparent;
+    border: 2px solid var(--colorLightGray);
+}
+
+img{
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+@media only screen and(min-width: 375px) {
+    section{  
+        display: flex;      
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        
+    }
+    
+}
